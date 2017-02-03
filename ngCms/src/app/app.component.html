@@ -1,0 +1,18 @@
+
+<div class="card" *ngIf="!isEditing">
+  <h4 class="card-header">Add new pet</h4>
+  <div class="card-block">
+    <form class="form-inline" [formGroup]="addPetForm" (ngSubmit)="addPet()" style="text-align:center">
+      <div class="form-group">
+        <input class="form-control" type="text" name="name" formControlName="name" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="number" name="age" formControlName="age" placeholder="Age" min="0">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="number" name="weight" formControlName="weight" placeholder="Weight" step="any" min="0">
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="!addPetForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
+    </form>
+  </div>
+</div>

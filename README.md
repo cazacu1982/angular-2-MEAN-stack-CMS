@@ -61,8 +61,9 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
   
   1. C:\develop\hostingTestAngular\cmsMean -----npm install
    npm start
-  
-  2. C:\develop\hostingTestAngular\cmsMean\ngView ----- npm install
+  2.  C:\develop\hostingTestAngular\cmsMean\ngCms ----- npm install
+  ng build
+  3. C:\develop\hostingTestAngular\cmsMean\ngView ----- npm install
   ng serve
   
   
